@@ -1,0 +1,374 @@
+/* STYLING body */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;	
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	}
+
+
+/* STYLING HEADER using id */
+#header{
+	width: 100%;
+	height: 70px;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px 2px #ccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+/* STYLING HEADER content */
+
+/* LOGO */
+#logo{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+
+/* STYLING NAVIGATION  */
+#nav-bar{
+	width: 75%;	
+	float: right;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+}
+
+#nav-bar ul li{
+	float: right;
+	padding: 20px;
+	font-size: 20px;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+	width: 100%;
+	height: auto;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+#home{
+	width: 100%;
+	height: 50vw;
+	float: left;
+	background-image: url('https://www.w3schools.com/w3images/hamburger.jpg');
+	background-size: cover;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+}
+
+.about{
+	width: 100%;
+	height: 800px;
+	float: left;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+}
+
+.about-div{
+	width: 50%;
+	height: 800px;
+	float: left;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+	padding: 100px;
+}
+
+
+#about-1{
+	float: left;
+	padding: 0;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	padding-right: 0px;
+}
+
+#about-2{
+	float: right;
+	overflow-y: auto;
+}
+
+#about-img{
+	width: 100%;
+	height: 100%;
+}
+
+.about-h1{
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+	font-weight: lighter;
+}
+
+#about-h3{
+	width: 100%;
+	text-align: center;
+	font-weight: inherit;
+	font-size: 20px;
+}
+
+.about-p{
+	width: 100%;
+	line-height: 30px;
+	font-size: 18px;
+	padding-top: 20px;
+	text-align: justify;
+}
+
+#menu-box{
+	float: left;
+	width: 100%;
+}
+
+.menu-h3{
+	font-weight: lighter;
+	word-spacing: 7px;
+	letter-spacing: 5px;
+	margin-top: 40px;
+}
+
+#menu-1{
+	float: left;
+	overflow-y: auto;
+}
+
+#menu-2{
+	float: right;
+	padding: 0;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 100px;
+}
+
+.menu-p{
+	color: #888;
+}
+
+#video-box{
+	float: left;
+	width: 100%;
+	height: auto;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+
+}
+
+iframe{
+	margin: 0 auto;
+}
+
+#contact{
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 150px;
+	padding-right: 150px;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+}
+
+.contact-h1{
+	font-weight: lighter;
+	text-align: left;
+	margin-bottom: 70px;
+}
+
+.contact-p{
+	margin-top: 20px;
+	line-height: 25px;
+}
+
+#contact-p-blue{
+	color: #385D8F;
+	font-weight: bold;
+}
+
+.input-field{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+#submit{
+	border: none;
+	padding: 10px;
+	margin-top: 30px;
+	background-color: #eee;
+}
+
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	font-size: 20px;
+	float: left;
+	background-color: #ddd;
+}
+
+a{
+	color: red;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+
+	#header{
+		width: 100%;
+	}
+	
+	#logo{
+		float: left;
+		width: 25%;
+		box-sizing: border-box;
+	}
+	
+	nav{
+		width: 75%;
+	}
+	
+	nav ul{
+		float: right;
+		width: 100%;
+		display: inline;
+		box-sizing: border-box;
+		overflow-x: auto;
+		/* border: 1px sloid green; */
+	}
+	
+	#nav-bar ul li{
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		margin-top: 20px;
+		padding-left: 3px;
+		padding-right: 3px;
+		box-sizing: border-box;
+		border-left: 0.5px groove #fefefe;
+		border-bottom: 0.5px ridge #fefefe;
+		border-top: 0.5px ridge #fefefe;
+	}
+
+	#nav-bar ul li:first-child{
+		padding-right: 3px;
+		border-right: 0.5px groove #fefefe;
+	}
+	
+	
+	#home{
+	width: 100%;
+	height: 50vh;
+	float: left;
+	background-image: url('https://www.w3schools.com/w3images/hamburger.jpg');
+	background-size: 100% 100%;
+		margin-top: 50px;
+	/* border: 1px solid white; */
+	box-sizing: border-box;
+}
+	.about{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	#menu-box{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.about-div{
+		width: 100%;
+	}
+	
+	#about-1{
+		clear: both;
+		width: 100%;
+		height: 50%;
+		padding: 0;
+		padding: 8%;
+	}
+	
+	#about-2{
+		clear: both;
+		width: 100%;
+		height: 50%;
+		padding: 0;
+		padding: 8%;
+		overflow-y: auto;
+	}
+	
+	#menu-1{
+		clear: both;
+		width: 100%;
+		height: 50%;
+		padding: 0;
+		padding: 8%;
+		overflow-y: auto;
+	}
+	
+	#menu-2{
+		clear: both;
+		width: 100%;
+		height: 50%;
+		padding: 0;
+		padding: 8%;
+	}
+	
+	#video-box{
+		width: 100%;
+		height: auto;
+/* 		padding: 8%; */
+		padding: 0;
+		margin: 0;
+		padding-top: 100px;
+	}
+	
+	iframe{
+		width: 80%;
+		height: auto;
+	}
+	
+	#contact{
+		padding: 0;
+		padding: 8%;
+	}
+	
+	.about-h1, .contact-h1{
+		padding: 0;
+		margin: 0;
+		margin-top: 50px;
+		text-align: center;
+	}
+	
+	.input-field{
+	width: 80%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding: 8%;
+	margin-top: 30px;
+}
+	
+}
